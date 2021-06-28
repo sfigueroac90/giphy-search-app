@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Footer from "/components/Footer"
+import Image from "next/image"
 export default function About () {
     return (
         <>
