@@ -66,7 +66,20 @@ export default function Home(intialData) {
           return(
             <div className="card" key = {index}>
               <h3>{each.title}</h3>
-              <img src={each.images.original.url} alt={each.title} />
+
+              <div className="img-container">
+                <Image
+                  src={each.images.original.url} 
+                  alt={each.title}
+                  width={300}
+                  height={200}
+                  objectFit="contain"
+                  
+                  />
+
+              </div>
+
+
             </div>
           )
           })

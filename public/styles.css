@@ -24,6 +24,8 @@ img {
 
 .card {
     margin: 0.5rem;
+    max-height: 300px;
+    max-width: 300px;
 }
 
 
@@ -68,3 +70,9 @@ input:focus{
     margin: auto;
     padding: 40px 0px
 }
+
+.img-container {
+    max-width: 300px;
+    max-height: 300px;
+}
+
