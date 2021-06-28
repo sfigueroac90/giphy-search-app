@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Footer from '/components/Footer'
+import Image from "next/image"
 
 export default function Search (initialData){
     const router = useRouter()
@@ -31,7 +32,14 @@ export default function Search (initialData){
                     return(
                         <div key={index}>
                         <h3>{each.title}</h3>
-                        <img src={each.images.original.url} alt={each.title}/>
+                        <Image
+                  src={each.images.original.url} 
+                  alt={each.title}
+                  width={300}
+                  height={200}
+                  objectFit="contain"
+                  
+                  />
                         </div>
                     )
                 })}
