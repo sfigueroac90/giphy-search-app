@@ -10,6 +10,19 @@ export default function About () {
                 <link rel="stylesheet" href="/styles.css" /> 
             </Head>
             <h1>About</h1>
+
+            <div className="logo-container">
+                <Image
+                    src="/assets/images/logo-explora.png"
+                    alt="logo"
+                    objectFit="contain"
+                    width={200}
+                    height={200}
+                />
+            </div>
+
+
+
             <p>Love giphys? So do we. use our app <b>giphy search</b> to find the perfect giphy for any occasion.</p>
 
             <h2>Why do people love giphys?</h2>
